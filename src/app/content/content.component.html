@@ -1,0 +1,31 @@
+<img src="https://play-lh.googleusercontent.com/VEydT3EiXaCLGmpR3uvn1XI_qXDw9E3kQyLAjrPMUPJuk60CqeOQXsRodkKpTfnqGA">
+<p>
+    Django REST framework (DRF) is a powerful and flexible toolkit for building Web APIs. Its main benefit is that it makes serialization much easier. Django REST framework is based on Django's class-based views, so it's an excellent option if you're familiar with Django.</p>
+<h1 [innerHTML]="myh1"></h1>
+<img [src]="SourceofImage" height="300" width="300">
+<br>
+<button (click)="intro()">intro</button>
+
+<h2>{{drfintro}}</h2>
+<input type="text" [(ngModel)]="fullName">
+<input type="number" [(ngModel)]="phone">
+<input type="email" [(ngModel)]="email">
+
+<p>Your name is:{{fullName}}</p>
+<p>Your phone number:{{phone}}</p>
+<p>Your email:{{email}}</p>
+<button (click)="submit()">submit</button>
+
+<table border="black" *ngIf="flag">
+    <tr>
+        <th>fullName</th>
+        <th>phon number</th>
+        <th>email</th>
+        </tr>
+        <tr>
+        <td>{{fullName}}</td>
+        <td>{{phone}}</td>
+        <td>{{email}}</td>
+    </tr>
+</table>
+
